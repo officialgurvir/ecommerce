@@ -1,0 +1,12 @@
+.product__list {
+  gap: 1em;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 500px) {
+  .product__list {
+    grid-template-columns: 1fr;
+  }
+}

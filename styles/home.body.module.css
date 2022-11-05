@@ -1,0 +1,282 @@
+.body,
+.cart {
+  height: auto;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.body {
+  width: 60%;
+}
+
+.body h2 {
+  margin-bottom: 10px;
+}
+
+.body hr {
+  border-top: 1px solid #1f1f1f;
+}
+
+.footer {
+  padding: 15px 0;
+  margin-top: 45px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+.grid {
+  gap: 4em;
+  display: grid;
+  grid-template-rows: 55vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid__col {
+  width: auto;
+  height: 100%;
+}
+
+.grid__col > div.full {
+  height: 100%;
+  position: relative;
+}
+
+.grid__col img {
+  object-fit: cover;
+}
+
+.flex {
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex > * {
+  width: 100%;
+}
+
+.buy__now,
+.add__to__basket {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.buy__now {
+  color: #FFFFFF;
+  background-color: rgb(225 29 72);
+}
+
+.add__to__basket {
+  background-color: rgb(250 204 21);
+}
+
+.grid__col h2 {
+  margin-bottom: -5px;
+}
+
+.grid__col span p {
+  margin-bottom: 10px;
+}
+
+.rating {
+  gap: 0.5em;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rating span:nth-child(1) {
+  color: rgb(250 204 21);
+}
+
+.rating span:nth-child(2) {
+  color: #545bc4;
+}
+
+.grid__col hr {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.grid__col stroke {
+  text-decoration: line-through;
+}
+
+.flex > div {
+  gap: 0.5em;
+  display: flex;
+  width: max-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex > div span {
+  font-size: 14px;
+  color: #545bc4;
+}
+
+.flex > div > div {
+  width: 40px;
+  display: flex;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  box-shadow: 0 0 4px 8px rgba(238, 238, 238, 0.25);
+}
+
+.ft {
+  font-size: 14px;
+}
+
+.ft > div {
+  margin-top: 10px;
+}
+
+.ft .color {
+  width: 30px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+.ft > div > div {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ft button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.cart h1 {
+  font-size: 2.5em;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.cart h1::after {
+  left: 0;
+  width: 5%;
+  content: '';
+  height: 5px;
+  bottom: -15px;
+  position: absolute;
+  background-color: #545bc4;
+}
+
+.cart table {
+  width: 100%;
+}
+
+.cart table tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart table img {
+  object-fit: cover;
+  width: 100% !important;
+  aspect-ratio: 3/2 !important;
+} 
+
+.cart table td:nth-child(1) {
+  width: 50%;
+}
+
+.cart tbody td {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+}
+
+.cart thead td {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #545bc4;
+}
+
+.cart > div {
+  gap: 14em;
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cart > div {
+  width: 100%;
+}
+
+.cart div td {
+  margin: 0;
+  width: 100% !important;
+}
+
+.cart > div tbody tr {
+  border: 1px solid #ddd;
+  padding: 10px 10px 20px 10px !important;
+}
+
+.cart > div tr {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cart div tbody tr {
+  padding: 5px 10px;
+}
+
+.cart div tbody tr div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart div p {
+  margin-bottom: 15px;
+}
+
+.cart div input,
+.cart div button {
+  padding: 5px 10px;
+  border: 1px solid #000;
+}
+
+.cart div input {
+  width: 70%;
+}
+
+.cart div button {
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    width: 90%;
+    overflow-x: hidden;
+  }
+}
